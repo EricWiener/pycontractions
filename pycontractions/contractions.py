@@ -72,7 +72,7 @@ simple_contractions = {
     re.compile(r"\bthey'?ve\b", re.I | re.U): "they have",
     re.compile(r"\b'?tis\b", re.I | re.U): "it is",
     re.compile(r"\bto'?ve\b", re.I | re.U): "to have",
-    re.compile(r"\bu\b", re.I | re.U): "you",
+    re.compile(r"\bu\b(?!\.s)", re.I | re.U): "you",
     re.compile(r"\bwasn'?t\b", re.I | re.U): "was not",
     re.compile(r"\bwanna'?\b", re.I | re.U): "want to",
     re.compile(r"\bwe'?d'?ve\b", re.I | re.U): "we would have",
